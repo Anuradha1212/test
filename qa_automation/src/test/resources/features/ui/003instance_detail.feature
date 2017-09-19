@@ -59,7 +59,7 @@ Scenario: Validate watchlist start and end date format
 @sanityTest
 Scenario: Validate watchlist From and To attribute
 	Given I login to tdrive application 
-	#	And I navigate to "Customer management" page 
+	And I navigate to "Customer management" page 
 	When I enter customer detail to search "BevMo" 
 	And I click on "BevMo" customer details 
 	And I click on instance from instance list 
