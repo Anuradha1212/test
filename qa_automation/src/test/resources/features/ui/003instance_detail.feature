@@ -4,7 +4,7 @@ Feature: Validate instance detail page
 @sanityTest
 Scenario: Verify instance detail page on screen 
 	Given I login to tdrive application 
-	#	And I navigate to "Customer management" page 
+	And I navigate to "Customer management" page 
 	When I enter customer detail to search "BevMo" 
 	And I click on "BevMo" customer details 
 	And I click on instance from instance list 
@@ -13,7 +13,7 @@ Scenario: Verify instance detail page on screen
 @sanityTest 
 Scenario: Verify slider min max value on screen 
 	Given I login to tdrive application 
-	#	And I navigate to "Customer management" page 
+	And I navigate to "Customer management" page 
 	When I enter customer detail to search "BevMo" 
 	And I click on "BevMo" customer details 
 	And I click on instance from instance list 
@@ -22,7 +22,7 @@ Scenario: Verify slider min max value on screen
 @sanityTest 
 Scenario: Validate cancel button functionality on update instance page 
 	Given I login to tdrive application 
-	#	And I navigate to "Customer management" page 
+	And I navigate to "Customer management" page 
 	When I enter customer detail to search "BevMo" 
 	And I click on "BevMo" customer details 
 	And I click on instance from instance list 
@@ -31,7 +31,7 @@ Scenario: Validate cancel button functionality on update instance page
 @sanityTest 
 Scenario: Validate watchlist status and status icon colour 
 	Given I login to tdrive application 
-	#	And I navigate to "Customer management" page 
+	And I navigate to "Customer management" page 
 	When I enter customer detail to search "BevMo" 
 	And I click on "BevMo" customer details 
 	And I click on instance from instance list 
@@ -41,7 +41,7 @@ Scenario: Validate watchlist status and status icon colour
 @sanityTest 
 Scenario: Validate watchlist status icon message colour 
 	Given I login to tdrive application 
-	#	And I navigate to "Customer management" page 
+	And I navigate to "Customer management" page 
 	When I enter customer detail to search "BevMo" 
 	And I click on "BevMo" customer details 
 	And I click on instance from instance list 
@@ -50,7 +50,7 @@ Scenario: Validate watchlist status icon message colour
 @sanityTest 
 Scenario: Validate watchlist start and end date format 
 	Given I login to tdrive application 
-	#	And I navigate to "Customer management" page 
+	And I navigate to "Customer management" page 
 	When I enter customer detail to search "BevMo" 
 	And I click on "BevMo" customer details 
 	And I click on instance from instance list 
