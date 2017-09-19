@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.tdrive.runner.RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 32.598 sec <<< FAILURE!
+Then I verify "service" "ascending" order(Scenario: Verify the sort option on customer detail page)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.tdrive.ui.main.CustomerManagementPage.noOfPage(CustomerManagementPage.java:368)
+	at com.tdrive.ui.main.CustomerManagementPage.originalList(CustomerManagementPage.java:287)
+	at com.tdrive.ui.main.CustomerManagementPage.compareList(CustomerManagementPage.java:317)
+	at com.tdrive.testclass.ui.CustomerManagementStep.i_verify_sort_button_for_customer_name(CustomerManagementStep.java:66)
+	at ✽.Then I verify "service" "ascending" order(002customer_Detail.feature:17)
+
+Scenario: Verify the sort option on customer detail page  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.tdrive.ui.main.CustomerManagementPage.noOfPage(CustomerManagementPage.java:368)
+	at com.tdrive.ui.main.CustomerManagementPage.originalList(CustomerManagementPage.java:287)
+	at com.tdrive.ui.main.CustomerManagementPage.compareList(CustomerManagementPage.java:317)
+	at com.tdrive.testclass.ui.CustomerManagementStep.i_verify_sort_button_for_customer_name(CustomerManagementStep.java:66)
+	at ✽.Then I verify "service" "ascending" order(002customer_Detail.feature:17)
+

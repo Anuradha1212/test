@@ -1,0 +1,139 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19081194320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify the sort option on customer detail page",
+        "description": "",
+        "id": "validate-customer-detail-page;verify-the-sort-option-on-customer-detail-page",
+        "after": [
+          {
+            "result": {
+              "duration": 129390384,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6715231598,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I login to tdrive application",
+            "match": {
+              "location": "LoginStep.i_login_to_tdrive_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2758257100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I navigate to \"Customer management\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Customer management",
+                  "offset": 15
+                }
+              ],
+              "location": "CommonSteps.i_navigate_to(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2295718684,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter customer detail to search \"BevMo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BevMo",
+                  "offset": 35
+                }
+              ],
+              "location": "CustomerManagementStep.i_enter_customer_detail_to_search(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 139130627,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on \"BevMo\" customer details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BevMo",
+                  "offset": 12
+                }
+              ],
+              "location": "CustomerManagementStep.i_click_on_customer_details(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135675993,
+              "error_message": "java.lang.ArrayIndexOutOfBoundsException: 1\n\tat com.tdrive.ui.main.CustomerManagementPage.noOfPage(CustomerManagementPage.java:368)\n\tat com.tdrive.ui.main.CustomerManagementPage.originalList(CustomerManagementPage.java:287)\n\tat com.tdrive.ui.main.CustomerManagementPage.compareList(CustomerManagementPage.java:317)\n\tat com.tdrive.testclass.ui.CustomerManagementStep.i_verify_sort_button_for_customer_name(CustomerManagementStep.java:66)\n\tat ✽.Then I verify \"service\" \"ascending\" order(002customer_Detail.feature:17)\n",
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I verify \"service\" \"ascending\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "service",
+                  "offset": 10
+                },
+                {
+                  "val": "ascending",
+                  "offset": 20
+                }
+              ],
+              "location": "CustomerManagementStep.i_verify_sort_button_for_customer_name(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@sanityTest1"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Customer detail page",
+    "description": "",
+    "id": "validate-customer-detail-page",
+    "keyword": "Feature",
+    "uri": "002customer_Detail.feature"
+  }
+]
